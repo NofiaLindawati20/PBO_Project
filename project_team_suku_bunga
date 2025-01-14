@@ -1,3 +1,13 @@
+/**
+ *
+ * @author
+ * NAMA     : NOFIA LINDAWATI
+ * KELAS    : PBO1
+ * NIM      : 23215034
+ * Deskripsi Program : Program ini berisi program untuk menampilkan
+ * Project Team 3
+ */
+
 import java.util.Scanner;
 
 public class Tabungan {
