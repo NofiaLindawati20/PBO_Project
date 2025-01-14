@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Tabungan {
+    // Atribut
+    private float modal;
+    private float sukuBunga;
+    private int tahun;
+
+    // Konstruktor
+    public Tabungan(float modal, float sukuBunga, int tahun) {
+        this.modal = modal;
+        this.sukuBunga = sukuBunga;
+        this.tahun = tahun;
+    }
+
+    // Metode untuk menghitung bunga
+    public float hitungBunga() {
+        return modal * sukuBunga * tahun / 100;
+    }
+
+    // Metode untuk menghitung total saldo
+    public float hitungTotal() {
+        return modal + hitungBunga();
+    }
+
+    // Metode untuk menampilkan hasil
+    public void tampilkanHasil() {
+        System.out.println("Modal awal: Rp " + modal);
+        System.out.println("Suku bunga: " + sukuBunga + "%");
+        System.out.println("Jangka waktu: " + tahun + " tahun");
+        System.out.println("Bunga yang diperoleh: Rp " + hitungBunga());
+        System.out.println("Total saldo: Rp " + hitungTotal());
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan modal awal: Rp ");
+        float modal = scanner.nextFloat();
+
+        System.out.print("Masukkan suku bunga (%): ");
+        float sukuBunga = scanner.nextFloat();
+
+        System.out.print("Masukkan jangka waktu (tahun): ");
+        int tahun = scanner.nextInt();
+
+        // Membuat objek Tabungan dengan input dari pengguna
+        Tabungan tabungan = new Tabungan(modal, sukuBunga, tahun);
+
+        // Memanggil metode tampilkanHasil
+        tabungan.tampilkanHasil();
+
+        scanner.close();
+    }
+}
