@@ -1,9 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package bukuku;
-
 /**
  *
  * @author
@@ -11,7 +5,7 @@ package bukuku;
  * KELAS    : PBO6
  * NIM      : 23215034
  * Deskripsi Program : Program ini berisi program untuk menampilkan
- * Array Sederhana
+ * Pembelian Buku
  */
 class Bukuku {
     String judul;
