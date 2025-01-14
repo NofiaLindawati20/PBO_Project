@@ -2,7 +2,7 @@
  *
  * @author
  * NAMA     : NOFIA LINDAWATI
- * KELAS    : PBO6
+ * KELAS    : PBO1
  * NIM      : 23215034
  * Deskripsi Program : Program ini berisi program untuk menampilkan
  * Perhitungan Kubus
