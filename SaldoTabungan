@@ -1,0 +1,26 @@
+/**
+ *
+ * @author
+ * NAMA     : NOFIA LINDAWATI
+ * KELAS    : PBO1
+ * NIM      : 23215034
+ * Deskripsi Program : Program ini berisi program untuk menampilkan
+ * Saldo Tabungan
+ */
+
+public class Latihan19SaldoTabungan {
+    public static void main(String[] args) {
+        double saldoAwal = 2500000; // Saldo awal
+        double sukuBunga = 0.15; // Suku bunga 15% per bulan
+        int bulan = 6; // Jumlah bulan yang ingin dihitung
+
+        for (int i = 1; i <= bulan; i++) {
+            double bunga = saldoAwal * sukuBunga;
+            double saldoAkhir = saldoAwal + bunga;
+
+            System.out.printf("Saldo di bulan ke-%d Rp.%.3f\n", i, saldoAkhir);
+
+            saldoAwal = saldoAkhir; // Update saldo awal untuk perhitungan bulan berikutnya
+        }
+    }
+}
